@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <style>
+            /* Seletores */
+            /* Classes selecionadas com ponto (.) */
+            .paragrafo {
+                margin-bottom: 30px;
+                background: tomato;
+                color: white;
+                padding: 15px;
+            }
+            /* 
+            .primeiro-paragrafo {
+                background: darkslateblue;
+            }
+
+            .segundo-paragrafo {
+                color: black;
+            } */
+
+            /* Ids são selecionados com jogo da velha (#) */
+            #primeiroParagrafo {
+                background: darkslateblue;
+            }
+
+            #segundoParagrafo {
+                color: black;
+            }
+
+            .link {
+                color: darkblue;
+            }
+
+            /* Para selecionar elementos filhos, colocamos o seletor da tag "mãe", um espaço e o seletor da ta filha */
+            .paragrafo .link {
+                color: darkgoldenrod;
+            }
+
+
+            /* Especificidade */
+            /* 1 - tags */
+            /* 10 - classes */
+            /* 100 - ids */
+            /* Para calcular: https://specificity.keegan.st/ */
+            .div {
+                color: tomato;
+            }
+            .box {
+                border: 5px solid tomato;
+            }
+
+            .box p {
+                border: inherit;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Seletores e especificidadde</h1>
+        <a class="link">texto</a>
+        <p class="paragrafo primeiro-paragrafo" id="primeiroParagrafo">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a ante nulla. Nullam vel viverra nulla. Praesent dictum iaculis mattis. Morbi quis urna vehicula, suscipit odio vel, iaculis massa. Nunc iaculis lacus non justo posuere, et ultrices sapien rhoncus. Morbi lobortis dolor quis purus viverra pulvinar. Ut vestibulum dictum pellentesque. Fusce semper ante egestas nibh eleifend tincidunt ut quis neque. Etiam mollis facilisis magna sed tincidunt. Nullam iaculis, mi in dapibus consectetur, purus metus suscipit mauris, in faucibus ligula lectus sit amet justo. <a href="" class="link">Link</a>
+        </p>
+        <p class="paragrafo segundo-paragrafo" id="segundoParagrafo">
+            Nunc aliquam convallis arcu in mollis. Sed ac arcu vitae justo luctus laoreet. Quisque porta diam at tortor placerat vestibulum. Cras tortor est, mollis et mauris at, consequat malesuada nisi. Sed venenatis purus vel sagittis varius. Nunc elit tellus, semper in lectus eu, ultrices tincidunt velit. Etiam suscipit augue ac laoreet suscipit. Praesent feugiat velit semper accumsan pulvinar. Nunc porta vulputate arcu, a sodales sem. Proin rhoncus eget mauris eget eleifend. Donec risus ligula, tempus id auctor ac, rutrum id quam. Ut sodales leo ac nunc ultricies, quis luctus ipsum lobortis.
+        </p>
+        <p class="paragrafo">
+            Nunc aliquam convallis arcu in mollis. Sed ac arcu vitae justo luctus laoreet. Quisque porta diam at tortor placerat vestibulum. Cras tortor est, mollis et mauris at, consequat malesuada nisi. Sed venenatis purus vel sagittis varius. Nunc elit tellus, semper in lectus eu, ultrices tincidunt velit. Etiam suscipit augue ac laoreet suscipit. Praesent feugiat velit semper accumsan pulvinar. Nunc porta vulputate arcu, a sodales sem. Proin rhoncus eget mauris eget eleifend. Donec risus ligula, tempus id auctor ac, rutrum id quam. Ut sodales leo ac nunc ultricies, quis luctus ipsum lobortis.
+        </p>
+
+        <h1>Herança</h1>
+        <div class="div">
+            <p>
+                asudhasudhiaisudhaishiuahsd <span>texto</span>
+            </p>
+        </div>
+
+        <div class="div box">
+            <p>
+                conteudo
+            </p>
+        </div>
+    </body>
+</html>
