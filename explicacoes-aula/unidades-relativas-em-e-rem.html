@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <style>
+            html {
+                font-size: 50px;
+            }
+
+            body {
+                margin: 0;
+            }
+
+            /* Porcentagem */
+            div {
+                height: 50px;
+                width: 50%;
+            }
+
+            .div-mae {
+                background: tomato;
+                font-size: 32px;
+            }
+
+            .div-filha {
+                background: burlywood;
+                font-size: 0.5em;
+            }
+
+            .div-neta {
+                background: violet;
+                font-size: 0.5em;
+            }
+
+            /* EM e REM */
+
+            /* EM: unidade relativa ao font-size da tag mãe */
+
+            /* REM: unidade relativa ao font-size ao elemento raíz */
+
+            /* VW: view-width (relacionado a largura da tela) */
+
+            /* VH: view-height (relacionado a altura da tela) */
+        </style>
+    </head>
+    <body>
+        <div class="div-mae">
+            div mae
+            <div class="div-filha">
+                div filha
+                <div class="div-neta">
+                    div neta
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
