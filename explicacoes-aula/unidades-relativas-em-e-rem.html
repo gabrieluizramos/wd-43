@@ -3,54 +3,110 @@
     <head>
         <style>
             html {
-                font-size: 50px;
+                font-size: 20px;
             }
 
             body {
                 margin: 0;
+                font-size: 16px;
             }
 
             /* Porcentagem */
-            div {
-                height: 50px;
+            .porcentagem {
+                width: 100%;
+            }
+            .porcentagem div {
                 width: 50%;
             }
 
             .div-mae {
                 background: tomato;
-                font-size: 32px;
             }
 
             .div-filha {
                 background: burlywood;
-                font-size: 0.5em;
             }
 
             .div-neta {
                 background: violet;
+            }
+
+            /* EM */
+            .div-em-mae {
+                font-size: 50px;
+            }
+
+            .div-em-filha {
                 font-size: 0.5em;
             }
 
-            /* EM e REM */
+            .div-em-neta {
+                font-size: 0.5em;
+            }
 
-            /* EM: unidade relativa ao font-size da tag mãe */
+            /* REM */
+            .div-rem-mae {
+                font-size: 50px;
+            }
 
-            /* REM: unidade relativa ao font-size ao elemento raíz */
+            .div-rem-filha {
+                font-size: 0.5rem;
+            }
 
-            /* VW: view-width (relacionado a largura da tela) */
-
-            /* VH: view-height (relacionado a altura da tela) */
+            .div-rem-neta {
+                font-size: 0.5rem;
+            }
         </style>
     </head>
     <body>
-        <div class="div-mae">
-            div mae
-            <div class="div-filha">
-                div filha
-                <div class="div-neta">
-                    div neta
+        <h1>Porcentagem</h1>
+        <h2>Relativo à porcentagem da tag mãe</h2>
+        <div class="porcentagem">
+            <div class="div-mae">
+                div mae
+                <div class="div-filha">
+                    div filha
+                    <div class="div-neta">
+                        div neta
+                    </div>
                 </div>
             </div>
         </div>
+
+        <hr>
+
+        <h1>EM</h1>
+        <h2>Unidade relativa ao font-size da tag mãe</h2>
+        <div class="div-em-mae">
+            EM mae
+            <div class="div-em-filha">
+                EM filha
+                <div class="div-em-neta">
+                    EM neta
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h1>REM</h1>
+        <h2>Unidade relativa ao font-size ao elemento raíz (html)</h2>
+        <div class="div-rem-mae">
+            REM mae
+            <div class="div-rem-filha">
+                REM filha
+                <div class="div-rem-neta">
+                    REM neta
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <h1>Outras unidades</h1>
+        <h2>VW</h2>
+        <h3>Relativo à largura total da tela</h3>
+        <h2>VH</h2>
+        <h3>Relativo à altura total da tela</h3>
     </body>
 </html>

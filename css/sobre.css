@@ -1,5 +1,7 @@
 body {
     width: 940px;
+    font-size: 16px;
+    line-height: 1.5;
     margin-left: auto;
     margin-right: auto;
     font-family: "Helvetica", "Lucida Grande", sans-serif;
@@ -43,11 +45,11 @@ figure img {
     width: 100%;
 }
 
-.contato__subtitulo	{
+.contato__subtitulo {
     display: inline;
 }
 
-.contato__info	{
+.contato__info {
     margin: 16px 0 24px;
     padding-left: 32px;
 }
@@ -61,12 +63,26 @@ figure img {
     margin-left: 10px;
 }
 
-.contato__secao	{
+.contato__secao {
     display: inline-block;
-    vertical-align:	top;
+    vertical-align: top;
     margin-left: 16px;
 }
 
-.contato__secao--telefone	{
+.contato__secao--telefone {
     margin-left: 32px;
+}
+
+.rodape {
+    padding: 1.75em 0;
+    font-size: 1.1rem;
+}
+
+.rodape__logo {
+    width: 6em;
+}
+
+.rodape__copyright {
+    display: inline;
+    margin-left: 1em;
 }
