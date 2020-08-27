@@ -60,3 +60,13 @@ figure img {
 .contato__info-descricao {
     margin-left: 10px;
 }
+
+.contato__secao	{
+    display: inline-block;
+    vertical-align:	top;
+    margin-left: 16px;
+}
+
+.contato__secao--telefone	{
+    margin-left: 32px;
+}
