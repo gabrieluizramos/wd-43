@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background: tomato;
+}
+
+.div {
+    display: inline;
+}
+
+p {
+    color: tomato;
+}
+
+/* media query (CSS3) */
+@media (min-width: 800px) {
+    .header {
+        background: purple;
+    }
+
+    .div {
+        display: block;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: black;
+        color: white;
+    }
+}
+  
+@media (prefers-color-scheme: light) {
+    body {
+        background: white;
+        color: black;
+    }
+}
+  
