@@ -1,0 +1,15 @@
+/* Font via @import css */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap'); */
+
+
+@import './reset.css';
+
+/* Font local */
+@font-face	{
+    font-family: Roboto;
+    src: url(fonts/Roboto/Roboto-Thin.ttf);
+}
+
+body {
+    font-family: Roboto;
+}
