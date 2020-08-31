@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <title>Display flex</title>
+        <style>
+          .flex-container {
+            background: tomato;
+            display: flex; /* transforma o container em flex */
+            height: 300px;
+            padding: 15px;
+          }
+
+          .flex-child {
+            width: 50px;
+            height: 50px;
+            background: coral;
+            border: 1px solid black;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+
+          .one {
+            align-items: flex-end; /* alinha elementos verticalmente */
+            justify-content: flex-end; /* alinha elementos horizontalmente */
+          }
+
+          .two {
+            align-items: flex-end;
+          }
+
+          .three {
+            justify-content: flex-end;
+          }
+
+          .four {
+            /* já está alinhado */
+          }
+
+          .five {
+            align-items: center;
+            justify-content: center;
+          }
+
+          .six {
+            width: 150px;
+            flex-wrap: wrap;
+          }
+
+          .seven {
+            flex-direction: column; /* inverte eixos de alinhamento e transforma elementos em coluna */
+            align-items: flex-end; /* alinha elementos horizontalmente (agora que os eixos foram invertidos) */
+            justify-content: flex-end; /* alinha elementos verticalmente (agora que os eixos foram invertidos) */
+          }
+
+
+        /* Deixa todos os containers em linha abaixo de 600px  */
+          /* @media (max-width: 600px) {
+            .flex-container {
+                flex-direction: column;
+            }
+          } */
+        </style>
+    </head>
+    <body>
+        <h1>Display Flex</h1>
+
+        <h2>Alinhado no canto inferior direito</h2>
+        <div class="flex-container one">
+            <div class="flex-child">1</div>
+            <div class="flex-child">2</div>
+            <div class="flex-child">3</div>
+            <div class="flex-child">4</div>
+        </div>
+
+        <h2>Alinhado no canto inferior esquerdo</h2>
+        <div class="flex-container two">
+            <div class="flex-child">1</div>
+            <div class="flex-child">2</div>
+            <div class="flex-child">3</div>
+            <div class="flex-child">4</div>
+        </div>
+
+        <h2>Alinhado no canto superior direito</h2>
+        <div class="flex-container three">
+            <div class="flex-child">1</div>
+            <div class="flex-child">2</div>
+            <div class="flex-child">3</div>
+            <div class="flex-child">4</div>
+        </div>
+
+        <h2>Alinhado no canto superior esquerdo</h2>
+        <div class="flex-container four">
+            <div class="flex-child">1</div>
+            <div class="flex-child">2</div>
+            <div class="flex-child">3</div>
+            <div class="flex-child">4</div>
+        </div>
+
+        <h2>Alinhado totalmente ao centro</h2>
+        <div class="flex-container five">
+            <div class="flex-child">1</div>
+            <div class="flex-child">2</div>
+            <div class="flex-child">3</div>
+            <div class="flex-child">4</div>
+        </div>
+
+        <h2>Quebrando os itens e mantendo os tamanhos</h2>
+        <div class="flex-container six">
+            <div class="flex-child">1</div>
+            <div class="flex-child">2</div>
+            <div class="flex-child">3</div>
+            <div class="flex-child">4</div>
+        </div>
+
+        <h2>Alinhando itens no canto inferior direito em coluna</h2>
+        <div class="flex-container seven">
+            <div class="flex-child">1</div>
+            <div class="flex-child">2</div>
+            <div class="flex-child">3</div>
+            <div class="flex-child">4</div>
+        </div>
+    </body>
+</html>
