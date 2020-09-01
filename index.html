@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/cabecalho.css">
         <link rel="stylesheet" href="css/rodape.css">
+        <link rel="stylesheet" href="css/form-newsletter.css">
     </head>
     <body>
         <header class="cabecalho">
@@ -20,7 +21,7 @@
                 <ul class="cabecalho__menu">
                     <li class="cabecalho__item-menu"> <a href="sobre.html#contato"> Contato </a> </li>
                     <li class="cabecalho__item-menu"> <a href="#"> Entrar </a> </li>
-                    <li class="cabecalho__item-menu 	cabecalho__item-menu--matricular"> <a href="#"> Matricule-se </a> </li>
+                    <li class="cabecalho__item-menu  cabecalho__item-menu--matricular"> <a href="#"> Matricule-se </a> </li>
                 </ul>
             </nav>
         </header>
@@ -38,19 +39,19 @@
               </p>
           
               <ul class="rodape__lista-midias-sociais">
-                <li	class="rodape__item-midias-sociais">
+                <li class="rodape__item-midias-sociais">
                   <a href="https://www.facebook.com/musicdotonline">
-                    <img src="img/footer-icone-facebook.svg" alt="MusicDot	no	Facebook" />
+                    <img src="img/footer-icone-facebook.svg" alt="MusicDot no Facebook" />
                   </a>
                 </li>
           
-                <li	class="rodape__item-midias-sociais">
+                <li class="rodape__item-midias-sociais">
                   <a href="https://www.youtube.com/user/musicdotonline">
-                    <img src="img/footer-icone-youtube.svg" alt="MusicDot	no	YouTube" />
+                    <img src="img/footer-icone-youtube.svg" alt="MusicDot no YouTube" />
                   </a>
                 </li>
           
-                <li	class="rodape__item-midias-sociais">
+                <li class="rodape__item-midias-sociais">
                   <a href="https://www.instagram.com/musicdotonline/">
                     <img src="img/footer-icone-instagram.svg" alt="Instagram" />
                   </a>
@@ -91,6 +92,21 @@
                 </ul>
               </nav>
             </section>
+
+            <section class="rodape__secao">
+                <h2 class="rodape__titulo">
+                    Receba novidades e lançamentos 
+                </h2>
+                    <form action="#" method="get" class="form-newsletter">
+                    <label for="form-newsletter__label" class="form-newsletter__label">
+                        Seu email pessoal
+                    </label>
+                    <input id="email-newsletter" name="email-newsletter" type="email" class="form-newsletter__campo">
+                    <button type="submit" class="form-newsletter__botao">
+                        OK
+                    </button>
+                    </form>
+                </section>
           </footer>          
     </body>
 </html>
