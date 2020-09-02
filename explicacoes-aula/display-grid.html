@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display grid</title>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        .wrapper {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+
+        .foto {
+            width: 200px;
+            height: 200px;
+            border-radius: 5px;
+            box-shadow: 3px 3px 3px #000000aa;
+            background-color: #ff002b;
+            margin-bottom: 1rem;
+        }
+
+        .foto-container {
+            width: 66%;
+        }
+        .foto-destaque-verde {
+            background-color: #24cc2d;
+            height: 400px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "verde . ."
+                "verde . .";
+        }
+
+        .foto-destaque-verde {
+            grid-area: verde;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Display flex</h1>
+        <div class="flex-container">
+            <div class="foto foto-destaque-verde"></div> 
+            <div class="flex-container foto-container"> 
+                <div class="foto"></div>
+                <div class="foto"></div>
+                <div class="foto"></div>
+                <div class="foto"></div>
+            </div>
+        </div>
+
+        <h1>Display grid</h1>
+        <div class="grid-container">
+            <div class="foto foto-destaque-verde"></div> 
+            <div class="foto"></div>
+            <div class="foto"></div>
+            <div class="foto"></div>
+            <div class="foto"></div>
+        </div>
+    </div>
+</body>
+</html>
